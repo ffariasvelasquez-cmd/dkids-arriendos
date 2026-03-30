@@ -307,12 +307,12 @@ window.dispatchEvent(new Event('fb-ready'));
     <div class="step"><div class="step-num">4</div><div class="step-text">En Firestore, ve a la pestana <strong>Reglas</strong> y reemplaza todo por:<br><code>rules_version = '2'; service cloud.firestore { match /databases/{database}/documents { match /{document=**} { allow read, write: if true; } } }</code><br>Luego haz clic en <strong>Publicar</strong>.</div></div>
     <div class="step"><div class="step-num">5</div><div class="step-text">Pega aqui los datos de tu <code>firebaseConfig</code>:</div></div>
     <div class="form-grid" style="margin-bottom:16px">
-      <div class="form-group"><label>apiKey</label><input type="text" id="cfg-apikey" placeholder="AIza..."></div>
-      <div class="form-group"><label>authDomain</label><input type="text" id="cfg-auth" placeholder="tu-proyecto.firebaseapp.com"></div>
-      <div class="form-group"><label>projectId</label><input type="text" id="cfg-proj" placeholder="tu-proyecto"></div>
-      <div class="form-group"><label>storageBucket</label><input type="text" id="cfg-bucket" placeholder="tu-proyecto.appspot.com"></div>
-      <div class="form-group"><label>messagingSenderId</label><input type="text" id="cfg-sender" placeholder="123456789"></div>
-      <div class="form-group"><label>appId</label><input type="text" id="cfg-appid" placeholder="1:123:web:abc..."></div>
+      <div class="form-group"><label>apiKey</label><input type="text" id="cfg-apikey" placeholder="AIzaSyDma8jffzgb0HjVmax-moU5vsW4ethEv-0"></div>
+      <div class="form-group"><label>authDomain</label><input type="text" id="cfg-auth" placeholder="dkids-diversion.firebaseapp.com"></div>
+      <div class="form-group"><label>projectId</label><input type="text" id="cfg-proj" placeholder="dkids-diversion"></div>
+      <div class="form-group"><label>storageBucket</label><input type="text" id="cfg-bucket" placeholder="dkids-diversion.firebasestorage.app"></div>
+      <div class="form-group"><label>messagingSenderId</label><input type="text" id="cfg-sender" placeholder="540788185390"></div>
+      <div class="form-group"><label>appId</label><input type="text" id="cfg-appid" placeholder="1:540788185390:web:08ad8df7e74db5710342bf"></div>
     </div>
     <button class="btn-primary" style="width:auto;padding:10px 28px" onclick="saveConfig()">&#128190; Guardar configuracion y conectar</button>
     <div id="cfg-alert" style="margin-top:10px"></div>
